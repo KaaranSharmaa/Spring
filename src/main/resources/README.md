@@ -5,3 +5,18 @@ spring is there on top pf it spring boot is there
 spring is a modular frame work which means it will ask you what you want to add
 mvn spring-boot:run
 any obj create and manage by spring is called beans
+
+Which Spring module is used for integrating ORM tools like Hibernate?
+Spring orm
+
+What annotation is used in Spring to automatically inject dependencies?
+@autowired
+
+Which feature of Spring is used to separate cross-cutting concerns like logging?
+AOP
+
+
+
+
+
+
