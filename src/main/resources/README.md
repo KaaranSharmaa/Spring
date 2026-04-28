@@ -58,6 +58,16 @@ in this we can pass the vlaue of setter in xml rather thn giving in the main cla
 <property name="age" value="21"> </property>//age is the variable deifine in the setter
 </bean>
 **********************************************************************************************************
-
+Ref Attribute
+The ref attribute allows one bean to refer to another bean within the Spring
+container.
+● The value of the ref attribute should be the id of another bean that you want
+to reference.
+● For the reference injection to work, the referenced bean must be defined in
+the configuration file. Otherwise, Spring will throw an error during the
+container initialization
+<bean id="alien1" class="com.telusko.Alien">
+ <property name="age" value="21"></property> Setter injection
+ <property name="lap" ref="lap1"></proper
 
 
