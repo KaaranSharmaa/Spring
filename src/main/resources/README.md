@@ -15,8 +15,16 @@ What annotation is used in Spring to automatically inject dependencies?
 Which feature of Spring is used to separate cross-cutting concerns like logging?
 AOP
 
-
-
-
-
+ApplicationContext context And calling bean
+ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+Alien obj = (Alien) context.getBean("alien");  
+in xml 
+<!-- Bean Definitions -->
+ <bean id="alien1" class="com.telusko.Alien">
+ </bean>
+ <bean id="alien2" class="com.telusko.Alien">
+ </bean>
+ <bean id="lap" class="com.telusko.Laptop">
+ </bean>
+</beans>
 
