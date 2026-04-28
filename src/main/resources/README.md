@@ -50,5 +50,14 @@ Or
 <bean id="alien1" class="com.telusko.Alien" scope="singleton" />
 Prototype
 <bean id="alien1" class="com.telusko.Alien" scope="prototype" />
+**********************************************************************************************************
+Setter injection 
+in this we can pass the vlaue of setter in xml rather thn giving in the main class
+
+<bean id="alien1" class="com.telusko.Alien" >
+<property name="age" value="21"> </property>//age is the variable deifine in the setter
+</bean>
+**********************************************************************************************************
+
 
 
