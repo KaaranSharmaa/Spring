@@ -14,7 +14,7 @@ What annotation is used in Spring to automatically inject dependencies?
 
 Which feature of Spring is used to separate cross-cutting concerns like logging?
 AOP
-
+**********************************************************************************************************
 ApplicationContext context And calling bean
 ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 Alien obj = (Alien) context.getBean("alien");  
@@ -27,4 +27,28 @@ in xml
  <bean id="lap" class="com.telusko.Laptop">
  </bean>
 </beans>
+**********************************************************************************************************
+Types of Bean Scopes:
+1. Singleton (Default Scope):
+○ In the Singleton scope, only one instance of the bean is created, even
+if there are multiple references to it.
+○ Every time we retrieve the bean from the Spring container, we will get
+the same instance.
+2. Prototype:
+○ In the Prototype scope, a new object is created each time when we call
+the getBean() method.
+○ Each reference will point to a distinct instance of the bean.
+3. Request (for Spring Web):
+○ In the Request scope, a new bean instance is created for every HTTP
+request. This scope is available in web applications.
+4. Session (for Spring Web):
+○ In the Session scope, a new bean instance is created for every HTTP
+session. This scope is specific to web applications.
+Singleton:
+<bean id="alien1" class="com.telusko.Alien" />
+Or
+<bean id="alien1" class="com.telusko.Alien" scope="singleton" />
+Prototype
+<bean id="alien1" class="com.telusko.Alien" scope="prototype" />
+
 
