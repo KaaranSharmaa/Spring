@@ -68,6 +68,13 @@ the configuration file. Otherwise, Spring will throw an error during the
 container initialization
 <bean id="alien1" class="com.telusko.Alien">
  <property name="age" value="21"></property> Setter injection
- <property name="lap" ref="lap1"></proper
+ <property name="lap" ref="lap1"></property>
+ ********************************************************************************************************
+Lazy Init Bean
+Lazy loading, or lazy initialization, refers to a design pattern in which the
+initialization of an object is deferred until it is actually needed, rather than initializing
+it at the time of application startup.
+<bean id="comp1" class="com.telusko.Desktop" lazy-init="true"></bean>
+
 
 
