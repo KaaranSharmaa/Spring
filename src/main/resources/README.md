@@ -75,6 +75,16 @@ Lazy loading, or lazy initialization, refers to a design pattern in which the
 initialization of an object is deferred until it is actually needed, rather than initializing
 it at the time of application startup.
 <bean id="comp1" class="com.telusko.Desktop" lazy-init="true"></bean>
+********************************************************************************************************
+The @Repository annotation is primarily used in which layer?
+The @Repository annotation is used to indicate that a class is responsible for data access, making it part of the Data Access (DAO) layer in a Spring application. This layer primarily handles interactions with the database, such as querying and persisting data, which aligns directly with the purpose of the @Repository annotation.
+
+
+
+
+
+
+
 
 
 
