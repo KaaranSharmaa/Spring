@@ -78,6 +78,8 @@ it at the time of application startup.
 ********************************************************************************************************
 The @Repository annotation is primarily used in which layer?
 The @Repository annotation is used to indicate that a class is responsible for data access, making it part of the Data Access (DAO) layer in a Spring application. This layer primarily handles interactions with the database, such as querying and persisting data, which aligns directly with the purpose of the @Repository annotation.
+********************************************************************************************************
+
 
 
 
